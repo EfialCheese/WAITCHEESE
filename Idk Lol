@@ -3,6 +3,7 @@ local user_premium__001 = game.Players.StephanieFlores8
 
 local Emojis = {
     '239605162/⭐',
+    '393661294/👑',
     
 }
 
@@ -290,7 +291,7 @@ end)
 
 OwnerIDS = {
     239605162,
-    215974510,
+    393661294,
 
 
 }
