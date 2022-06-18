@@ -422,7 +422,7 @@ end
 						court = "Court",
 						club = "Club",
 						bank = "Bank",
-                                                AdminJail = "Jail",
+                                                jail = "AdminJail",
 					}
 					local area = Locations_[string.lower(msg[2])]
 
