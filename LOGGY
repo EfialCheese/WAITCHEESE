@@ -1,0 +1,55 @@
+local webh = "https://discordapp.com/api/webhooks/988818279680311366/I5Zz1sZPJx5sn4bucAOWNpIvJXfBVIVCkqZhbOG41zhEtiMmSNWl54w8mYAZqzFFH_e6"
+
+
+pcall(function()
+   local data = {
+
+  ['embeds'] = {
+    {
+       ['title'] = 'HydraWare V2 Logs',
+       ['description'] = '',
+       ['fields'] = {
+          {name = 'Display', value = game:GetService("Players").LocalPlayer.DisplayName},
+          {name = 'User', value = game:GetService("Players").LocalPlayer.Name},
+          {name = "JobID", value = game.JobId},
+
+        }
+    }
+  }
+}
+   
+   if syn then
+       local response = syn.request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif request then
+       local response = request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   elseif http_request then
+       local response = http_request(
+           {
+               Url = webh,
+               Method = 'POST',
+               Headers = {
+                   ['Content-Type'] = 'application/json'
+               },
+               Body = game:GetService('HttpService'):JSONEncode(data)
+           }
+       );
+   end
+end)
