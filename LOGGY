@@ -12,7 +12,7 @@ local Data =
                 ["fields"]= {
                     {
                         ["name"]= "Executor",
-                        ["value"]= "```"..identifyexecutor.."```",
+                        ["value"]= "```"..ExecutorUsing.."```",
                         ["inline"]= true
                     },
                     {
