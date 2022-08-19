@@ -4,8 +4,7 @@ local Data =
     {
         ["embeds"]= {
             {            
-                ["title"]= "Click here to view players profile";
-                ["url"]= "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId;
+                ["title"]= "HydraWare V3 Logs";
                 ["description"]= "```Display: "..game.Players.LocalPlayer.DisplayName.." | User: "..game.Players.LocalPlayer.Name.."```";
                 ["color"]= tonumber(0x7269da);
                 
